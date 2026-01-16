@@ -1,7 +1,14 @@
 import React from 'react';
+import Navbar from './components/Navbar';
 
 const App = () => {
-    return(<h1 className='text-center mt-20 text-5xl font-bold'>hello world!</h1>);
+    return (
+        <>
+            <div className="w-full h-screen bg-zinc-900 text-white">
+                <Navbar />
+            </div>
+        </>
+    );
 };
 
 export default App;
