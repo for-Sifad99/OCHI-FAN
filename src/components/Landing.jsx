@@ -38,7 +38,7 @@ const Landing = () => {
                     </p>
                 ))}
 
-                <div className="start text-zinc-500 flex items-center gap-2">
+                <div className="start text-zinc-200 flex items-center gap-2">
                     <div className="uppercase px-3 py-1 border border-zinc-400 text-md font-light rounded-full">
                         Start The Project
                     </div>
