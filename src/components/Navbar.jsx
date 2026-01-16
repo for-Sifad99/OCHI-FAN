@@ -17,11 +17,11 @@ function Navbar() {
                 <Logo />
             </div>
             {/* Nav links */}
-            <div className="links text-white font-[Neue Montreal] flex gap-7">
+            <div className="links text-white font-neue font-normal flex gap-7">
                 {links.map((item, i) => (
                     <a
                         key={i}
-                        className={`text-md font-light capitalize ${i === links.length - 1 && 'ml-32'}`}
+                        className={`text-md capitalize ${i === links.length - 1 && 'ml-32'}`}
                     >
                         {item}
                     </a>

@@ -1,1 +1,27 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+@font-face {
+    font-family: 'grotesk';
+    src: url('./fonts/foundersGrotesk.woff') format('woff2');
+    font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'neue';
+    src: url('./fonts/neueMontreal.woff') format('woff');
+    font-weight: 400 important!;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer utilities {
+    .font-grotesk {
+        font-family: 'grotesk', system-ui, sans-serif;
+    }
+
+    .font-neue {
+        font-family: 'neue', system-ui, sans-serif;
+    }
+}
