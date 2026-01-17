@@ -20,7 +20,7 @@ const About = () => {
                 </div>
 
                 <div className='w-1/2 h-[70vh] rounded-3xl'>
-                <img className='w-full h-full rounded-3xl object-cover' src="./about-img.jpg" alt="About section image" /></div>
+                <img className='w-full h-full rounded-3xl bg-cover object-cover' src="./about-img.jpg" alt="About section image" /></div>
             </div>
         </div>
     );
