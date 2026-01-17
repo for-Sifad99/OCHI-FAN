@@ -1,4 +1,5 @@
 import React from 'react';
+import { animate, motion } from 'framer-motion';
 import { FaArrowUpLong } from 'react-icons/fa6';
 
 const Landing = () => {
@@ -12,7 +13,21 @@ const Landing = () => {
                             <div key={i} className="masker">
                                 <div className="w-fit flex items-end overflow-hidden">
                                     {i === 1 && (
-                                        <div className="relative mr-[0.9vw] w-[8vw] h-[5vw] -top-[0.15vw] rounded-md bg-green-400"></div>
+                                        <motion.div
+                                            initial={{ width: 0 }}
+                                            animate={{ width: '8vw' }}
+                                            transition={{
+                                                ease: [0.76, 0, 0.24, 1],
+                                                duration: 1,
+                                            }}
+                                            className="relative mr-[0.9vw] w-[8vw] h-[5vw] -top-[0.15vw]"
+                                        >
+                                            <img
+                                                className="w-full h-full bg-cover rounded-md"
+                                                src="./landing-img.jpg"
+                                                alt=""
+                                            />
+                                        </motion.div>
                                     )}
                                     <h1 className="uppercase text-[8vw] leading-[6vw] tracking-tight font-grotesk font-medium">
                                         {item}
